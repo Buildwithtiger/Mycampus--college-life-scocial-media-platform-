@@ -85,22 +85,55 @@ Student interaction and information sharing within educational institutions have
 
 ```
 my-campus/
-├── index.php                 # Homepage / Feed
-├── login.php                 # User login
-├── register.php              # User registration
-├── profile.php               # User profile management
-├── admin/
-│   └── dashboard.php         # Admin panel for event management
-├── includes/
-│   ├── config.php            # Database configuration
-│   ├── functions.php         # Core functions
-│   └── header.php / footer.php
-├── assets/
-│   ├── css/                  # Stylesheets
-│   ├── js/                   # JavaScript files
-│   └── images/               # Images and uploads
-└── sql/
-    └── database.sql          # Database schema
+├── index.php                     # Main feed / homepage (13 KB version)
+├── login.php                     # User login page
+├── register.php                  # User registration page
+├── profile.php                   # User profile page
+├── posts.php                     # Posts management / display
+├── events.php                    # Events listing & management
+├── students.php                  # Student directory / search
+├── chat.php                      # Real‑time chat interface
+├── notifications.php             # Notification center
+├── settings.php                  # User settings
+├── leaderbord.php                # Leaderboard (engagement stats)
+├── scanner.php                   # QR code scanner for check‑ins
+├── scanner_handler.php           # Backend for QR scanning
+├── save_attendance.php           # Save attendance records
+├── add_post.php                  # Create a new post
+├── add_feed_comment.php          # Add comment to feed post
+├── delete_feed_comment.php       # Delete a feed comment
+├── comment_handler.php           # Comment actions (like, delete)
+├── follow_handler.php            # Follow/unfollow logic
+├── like_handler.php              # Like/unlike posts
+├── get_comments.php              # Fetch comments (AJAX)
+├── get_feed_comments.php         # Fetch feed comments (AJAX)
+├── get_message.php               # Fetch messages (AJAX)
+├── get_posts.php                 # Fetch posts (AJAX)
+├── get_user_posts.php            # Fetch user‑specific posts (AJAX)
+├── message_handler.php           # Send/receive messages
+├── mark_notification_read.php    # Mark notification as read
+├── search_handler.php            # Search users (AJAX)
+├── logout.php                    # Logout script
+├── con.php                       # Database connection (legacy)
+├── config.php                    # Configuration (DB, constants)
+├── debug_paths.php               # Debugging utility
+├── ap.php                        # API endpoint (maybe)
+├── R.PHP                         # Unknown (possibly rename later)
+├── ip.html                       # IP detection page
+├── ddd.sql                       # Database dump / schema
+├── admin/                        # Admin panel (dashboard, events CRUD)
+│   └── (admin PHP files)
+├── assets/                       # CSS, JS, images, etc.
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── uploads/                      # User‑uploaded content
+│   ├── events/                   # Event images
+│   ├── posts/                    # Post images/videos
+│   └── profiles/                 # Profile pictures
+├── events/                       # (Optional) Additional event pages
+├── posts/                        # (Optional) Additional post pages
+└── profiles/                     # (Optional) Profile‑related includes
 ```
 
 ---
